@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DeviceListViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DeviceListViewController" id="BYZ-38-t0r" userLabel="DeviceListViewController" customClass="DeviceListViewController" customModule="BluetoothScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IXV-bM-O75">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceListCell" rowHeight="80" id="Efi-cF-uha" customClass="DeviceListTableViewCell" customModule="BluetoothScanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Efi-cF-uha" id="62n-dG-PKo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3q-Pq-ojm" userLabel="Device Name">
+                                                    <rect key="frame" x="114.5" y="15" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jic-gD-agX" userLabel="Name">
+                                                    <rect key="frame" x="15" y="15" width="49.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signal:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgU-qO-bRZ" userLabel="Signal">
+                                                    <rect key="frame" x="15" y="45.5" width="51.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0k-yo-Ei4" userLabel="Signal Desc">
+                                                    <rect key="frame" x="114.5" y="45.5" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rgU-qO-bRZ" firstAttribute="top" secondItem="Jic-gD-agX" secondAttribute="bottom" constant="10" id="EIf-kO-DVM"/>
+                                                <constraint firstItem="U0k-yo-Ei4" firstAttribute="leading" secondItem="e3q-Pq-ojm" secondAttribute="leading" id="GNL-Vj-gR8"/>
+                                                <constraint firstItem="U0k-yo-Ei4" firstAttribute="centerY" secondItem="rgU-qO-bRZ" secondAttribute="centerY" id="JuS-GR-xkc"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e3q-Pq-ojm" secondAttribute="trailing" priority="250" constant="15" id="LzJ-SG-ieP"/>
+                                                <constraint firstItem="e3q-Pq-ojm" firstAttribute="centerY" secondItem="Jic-gD-agX" secondAttribute="centerY" id="MzR-TN-nqZ"/>
+                                                <constraint firstItem="rgU-qO-bRZ" firstAttribute="leading" secondItem="62n-dG-PKo" secondAttribute="leading" constant="15" id="XHN-4a-v9B"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U0k-yo-Ei4" secondAttribute="trailing" priority="250" constant="15" id="iPi-F5-QEU"/>
+                                                <constraint firstItem="e3q-Pq-ojm" firstAttribute="leading" secondItem="Jic-gD-agX" secondAttribute="trailing" constant="50" id="j6P-3u-Wd4"/>
+                                                <constraint firstItem="Jic-gD-agX" firstAttribute="top" secondItem="62n-dG-PKo" secondAttribute="top" constant="15" id="ngn-Rz-lAb"/>
+                                                <constraint firstItem="Jic-gD-agX" firstAttribute="leading" secondItem="62n-dG-PKo" secondAttribute="leading" constant="15" id="ywe-Vj-vyN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deviceName" destination="e3q-Pq-ojm" id="fjN-eN-8na"/>
+                                            <outlet property="signalStrengthLabel" destination="U0k-yo-Ei4" id="hLh-i0-Dmq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hTQ-1r-5rN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uRU-JN-euh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IXV-bM-O75" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z6e-1X-BMk"/>
+                            <constraint firstItem="IXV-bM-O75" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hds-J6-hA4"/>
+                            <constraint firstItem="IXV-bM-O75" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uqq-2L-qYp"/>
+                            <constraint firstItem="IXV-bM-O75" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zff-bc-jyj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deviceListTableView" destination="IXV-bM-O75" id="07Z-pB-uwM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
