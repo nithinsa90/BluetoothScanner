@@ -13,7 +13,6 @@
 		9C92DC862DA98C2700C416B2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92DC852DA98C2700C416B2 /* ChartViewController.swift */; };
 		9C92DC882DA98D9A00C416B2 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92DC872DA98D9900C416B2 /* DeviceListViewController.swift */; };
 		9C997E1C2DAF1B030009EE82 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C997E1B2DAF1B030009EE82 /* RootNavigationController.swift */; };
-		9C997E1E2DAF5BA90009EE82 /* AAChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C997E1D2DAF5BA90009EE82 /* AAChartViewController.swift */; };
 		9C997E222DAF74C50009EE82 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C997E212DAF74C50009EE82 /* BarChartViewController.swift */; };
 		9C997E242DB013A10009EE82 /* NewChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C997E232DB013A10009EE82 /* NewChartViewController.swift */; };
 		9C997E262DB032EC0009EE82 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C997E252DB032EC0009EE82 /* LineChartViewController.swift */; };
@@ -60,7 +59,6 @@
 		9C92DC852DA98C2700C416B2 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		9C92DC872DA98D9900C416B2 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
 		9C997E1B2DAF1B030009EE82 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
-		9C997E1D2DAF5BA90009EE82 /* AAChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAChartViewController.swift; sourceTree = "<group>"; };
 		9C997E212DAF74C50009EE82 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		9C997E232DB013A10009EE82 /* NewChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChartViewController.swift; sourceTree = "<group>"; };
 		9C997E252DB032EC0009EE82 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				9C92DC852DA98C2700C416B2 /* ChartViewController.swift */,
 				9C92DC872DA98D9900C416B2 /* DeviceListViewController.swift */,
 				9CC8EA052DAEA7AF005E7458 /* DeviceListTableViewCell.swift */,
-				9C997E1D2DAF5BA90009EE82 /* AAChartViewController.swift */,
 				9C997E212DAF74C50009EE82 /* BarChartViewController.swift */,
 				9C997E232DB013A10009EE82 /* NewChartViewController.swift */,
 				9C997E252DB032EC0009EE82 /* LineChartViewController.swift */,
@@ -450,7 +447,6 @@
 				9CA36A8A2DA97739006A0E56 /* ViewController.swift in Sources */,
 				9CA36A902DA97739006A0E56 /* BluetoothScanner.xcdatamodeld in Sources */,
 				9C997E242DB013A10009EE82 /* NewChartViewController.swift in Sources */,
-				9C997E1E2DAF5BA90009EE82 /* AAChartViewController.swift in Sources */,
 				9CA36A862DA97739006A0E56 /* AppDelegate.swift in Sources */,
 				9C997E262DB032EC0009EE82 /* LineChartViewController.swift in Sources */,
 				9C997E1C2DAF1B030009EE82 /* RootNavigationController.swift in Sources */,
